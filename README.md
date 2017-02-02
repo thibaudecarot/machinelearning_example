@@ -28,7 +28,7 @@ sepalLength, sepalWidth, petalLength, petalWidth, specie;
 
 **Predictions of burned areas with Logistic Regression** 
 
-I use logistic regression to provide a total area estimation of Forest Fire according to different Qualitative variables.
+I use logistic regression to provide a probability of Forest Fire according to different Qualitative variables.
 
 Attribute information:  
    For more information, read [Cortez and Morais, 2007].

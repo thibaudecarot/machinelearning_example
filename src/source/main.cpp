@@ -1,9 +1,10 @@
 #include <iostream>
 
 #include "KnnIris.h"
+#include "LRFire.h"
 
 static std::string help(){
-    std::cout << "usage: DataMiningExample [--version] [--help] [--algo={knniris}]" << std::endl;
+    std::cout << "usage: DataMiningExample [--version] [--help] [--algo={knniris,forestfire}]" << std::endl;
 }
 
 int main(int argc, char* argv[]) {
@@ -15,6 +16,9 @@ int main(int argc, char* argv[]) {
         } else if (command == "--algo=knniris") {
             KnnIris irisProblem;
             irisProblem.irisEvaluation();
+        }  else if (command == "--algo=forestfire") {
+            LRFire lr;
+            lr.fireEvaluation();
         } else {
             help();
         }
